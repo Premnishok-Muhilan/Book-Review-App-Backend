@@ -13,7 +13,8 @@ const app = express();
 // use the cors middleware
 app.use(
   cors({
-    origin: "http://localhost:5173", // Allow only your frontend origin
+    // origin: "http://localhost:5173", // Allow only your frontend origin
+    origin:"https://jazzy-phoenix-70dc0b.netlify.app/",
     credentials: true, // Allow cookies and credentials
   })
 );
