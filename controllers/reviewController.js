@@ -1,4 +1,8 @@
-const Review = require('../models/Review');
+//BUG : Error: Cannot find module '../models/Review'
+// const Review = require('../models/Review');
+
+//BUG FIX
+const Review = require('../models/review');
 
 const reviewController = {
     getAllReviews: async (req, res) => {

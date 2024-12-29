@@ -10,6 +10,7 @@ mongoose.connect(MONGODB_URI)
         // start the server and listen on port 3001
         app.listen(3001, () => {
             console.log('Server is running on port 3001 at http://localhost:3001');
+            //console.log(`${MONGODB_URI}`)
         });
     })
     .catch(err => console.error('Could not connect to MongoDB...', err));
